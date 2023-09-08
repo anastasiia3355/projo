@@ -295,7 +295,7 @@ button {
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
-  width: 1rem;
+  width: 0.7rem;
   border-radius: 0.5rem;
 }
 
