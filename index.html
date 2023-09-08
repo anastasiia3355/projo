@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <!-- AOS CDN css-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Product Owner</title>
+</head>
+<body>
+    <!-- FOR SUBMIT -->
+    <div class="modal" id="becomeClientModal">
+        <div class="modal__inner" id="modal-inner">
+            <h4 class="title-black">Отправить заявку</h4>
+            <div class="modal-close" id="modal-close">
+                <i class='bx bx-x'></i>
+            </div>
+           
+            <div class="request-form__content" >    
+                           
+                <form action="/" method="POST" class="form1">
+                    <div class="form__group" >
+                        <input class="input-name" type="text" placeholder="Ваше Имя">
+                    </div>     
+                    <div class="form__group">
+                        <input class="input-flag" type="text">
+                        <input class="input-phone tel"   type="tel" placeholder="Ваш Телефон"
+                        onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" 
+                        />
+                    </div>  
+                    <div class="form__group">
+                        <input class="input-mail email1" type="email" placeholder="Ваш Email">
+                    </div>  
+                    <div class="form__group">
+                       
+                        <label class=""> 
+                            <input type="checkbox" checked="checked"/>
+                            Есть начальные знания по управлению IT-продуктами
+                          </label>
+                       
+                    </div>  
+            
+                    <div class="form-btn btn-center">
+                        <button class="btn-form " type="submit">Оставить заявку</button>
+                    </div>      
+                </form>
+              
+            </div>
+        </div>
+    </div>    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="#!"><span>Product</span>Mentor </a>
+            </div>
+            <div class="header__right">
+                <div class="btn-form" data-modal="#becomeClientModal">
+                    Оставить заявку
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="intro">
+        <div class="container intro__container">
+            <div class="intro__top">
+                <div class="intro__left" >
+                    <div class="intro__pretitle" data-aos="fade-right" data-aos-delay="0"
+                    data-aos-duration="500">
+                        Online - курс с оплатой после трудоустройства.
+                    </div>
+                    <h1 class="intro__title" data-aos="fade-right" data-aos-delay="100"
+                    data-aos-duration="500">
+                        <span>Product Owner</span> - востребовано и высокооплачиваемо
+                    </h1>
+                    <div class="intro__content" data-aos="fade-right" data-aos-delay="200"
+                    data-aos-duration="500">
+                        <div class="intro__content-descr" data-aos="fade-right" data-aos-delay="300"
+                        data-aos-duration="500">
+                            <div>Средняя зарплата выпускников на старте </div>
+                            <a class="accent-link" href="#!">Подробнее»</a>
+                        </div>
+                        <div class="intro__content-price border-btn">
+                           <span id="intro-rubles">211000</span> ₽ 
+                        </div>
+                    </div>
+                </div>
+                <div class="intro__right">
+                    <div class="intro__right-block">
+                        <div class="intro__right-author" data-aos="fade-left" data-aos-delay="100"
+                        data-aos-duration="500">
+                            Антон Баланов \ основатель
+                        </div>
+                        <div class="intro__right-exp" data-aos="fade-left" data-aos-delay="200"
+                        data-aos-duration="500">
+                            <span>Более 13 лет опыта \</span>
+                            <img src="assets/images/intro_banks/Maskgroup-1.png" alt="">
+                            <img src="assets/images/intro_banks/Maskgroup-2.png" alt="">
+                            <img src="assets/images/intro_banks/Maskgroup-3.png" alt="">
+                            <img src="assets/images/intro_banks/Maskgroup.png" alt="">
+                            <img src="assets/images/intro_banks/Vector.png" alt="">
+                        </div>
+                    </div>
+                    <img src="assets/images/Subtract.png" alt="intro" class="intro__img" data-aos="fade-left" data-aos-delay="0"
+                    data-aos-duration="500">
+                </div>
+            </div>
+            <div class="intro__bottom">
+               
+                <div class="intro__bottom-left" data-aos="fade-right" data-aos-delay="300"
+                data-aos-duration="500">
+                    <div class="btn-form" data-modal="#becomeClientModal">
+                        Оставить заявку
+                    </div>
+                </div>
+                <div class="intro__bottom-right">
+                   <div class="intro__bottom-list" data-aos="fade-left" data-aos-delay="0"
+                   data-aos-duration="500">
+                    Идёт набор на поток. Дата старта:
+                    <span>
+                        18 сентября 2023 г.
+                    </span>
+                   </div>
+                   <div class="intro__bottom-list" data-aos="fade-left" data-aos-delay="100"
+                   data-aos-duration="500">
+                    Приём тестового задания до:
+                    <span>
+                        15 сентября 2023 г.
+                    </span>
+                   </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+    
+    <section class="section whois">
+        <div class="container">
+            <div class="section__bighead">
+                <h2 class="big-title" data-aos="fade-right" data-aos-delay="0"
+                data-aos-duration="500">
+                    Product owner 
+                </h2>
+                <p class="big-descr" data-aos="fade-left" data-aos-delay="100"
+                data-aos-duration="500">
+                    <span>Лидер</span> команды, который решает, что и как делать, чтобы создать хороший продукт, понимает, что нужно пользователям. <span>Главная цель</span> - сделать продукт полезным для компании и людей.
+                </p>
+            </div>
+            <div class="whois__inner">
+                <div class="whois__item" data-aos="fade-up" data-aos-delay="0"
+                data-aos-duration="500">
+                    <div class="whois__icon">
+                        <img src="assets/images/whois_icons/darts.svg" alt="">
+                    </div>
+                    <div class="whois__content">
+                        <h4 class="whois__title">
+                            Определяет цель и задачи
+                        </h4>
+                        <p class="whois__text">
+                            Говорит, как будет выглядеть продукт и что для этого делать.
+                        </p>
+                    </div>
+                </div>
+                <div class="whois__item" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="500">
+                    <div class="whois__icon">
+                        <img src="assets/images/whois_icons/benefit.svg" alt="">
+                    </div>
+                    <div class="whois__content">
+                        <h4 class="whois__title">
+                            Делает продукт полезным
+                        </h4>
+                        <p class="whois__text">
+                            Улучшает продукт, чтобы он был полезным для всех.
+                        </p>
+                    </div>
+                </div>
+                <div class="whois__item" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="500">
+                    <div class="whois__icon">
+                        <img src="assets/images/whois_icons/communication.svg" alt="">
+                    </div>
+                    <div class="whois__content">
+                        <h4 class="whois__title">
+                            Помогает команде
+                        </h4>
+                        <p class="whois__text">
+                            Говорит с разработчиками, отвечает и помогает понять задачи.
+                        </p>
+                    </div>
+                </div>
+                <div class="whois__item" data-aos="fade-up" data-aos-delay="300"
+                data-aos-duration="500">
+                    <div class="whois__icon">
+                        <img src="assets/images/whois_icons/ask.svg" alt="">
+                    </div>
+                    <div class="whois__content">
+                        <h4 class="whois__title">
+                            Помогает пользователям
+                        </h4>
+                        <p class="whois__text">
+                            Узнает, что нужно людям и объясняет это команде.
+                        </p>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </section>
+    <section class="section whywe">
+        <div class="container">
+            <h2 class="title center" data-aos="fade-right" data-aos-delay="0"
+            data-aos-duration="500">
+                Почему <span>мы?</span>
+            </h2>
+            <div class="whywe__inner">
+                <div class="whywe__item" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="500">
+                    <div class="whywe__number">
+                        <img src="assets/images/1.png" alt="">
+                    </div>
+                    <div class="whywe__block">
+                        <div class="whywe__block-icon">
+                            <img src="assets/images/icon1.svg" alt="">
+                        </div>
+                        <div class="whywe__block-content">
+                            <h3>
+                                Опытный ментор
+                            </h3>
+                            <p>
+                                Интенсивная подготовка с ментором
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="whywe__item" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="500">
+                    <div class="whywe__number">
+                        <img src="assets/images/2.png" alt="">
+                    </div>
+                    <div class="whywe__block">
+                        <div class="whywe__block-icon">
+                            <img src="assets/images/icon2.svg" alt="">
+                        </div>
+                        <div class="whywe__block-content">
+                            <h3>
+                                Гарантия трудоустройства
+                            </h3>
+                            <p>
+                                По договору в Москве или Санкт-Петербурге
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="whywe__item" data-aos="fade-up" data-aos-delay="300"
+                data-aos-duration="500">
+                    <div class="whywe__number">
+                        <img src="assets/images/3.png" alt="">
+                    </div>
+                    <div class="whywe__block">
+                        <div class="whywe__block-icon">
+                            <img src="assets/images/icon3.svg" alt="">
+                        </div>
+                        <div class="whywe__block-content">
+                            <h3>
+                                Бесплатное обучение
+                            </h3>
+                            <p>
+                                Поддержка сообщества
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="whywe__bottom">
+                <div class="whywe__bottom-head">
+                    <h3 class="title" data-aos="fade-right" data-aos-delay="0"
+                    data-aos-duration="500">
+                        Мы с тобой от заявки до первого <span>рабочего дня.</span> И даже после.
+                    </h3>
+                    <p class="descr" data-aos="fade-right" data-aos-delay="100"
+                    data-aos-duration="500">
+                        Чтобы ты 100% устроился на работу и как можно скорее стал крутым product-owner’ом
+                    </p>
+                </div>
+                <div class="whywe__bottom-inner-small">
+                    <img src="assets/images/ill-graph.png" alt="graph">
+                </div>
+                <div class="whywe__bottom-inner" data-aos="zoom-in-down" data-aos-delay="200"
+                data-aos-duration="500">
+                    
+                    <div class="whywe__svg1">
+                        <div class="whywe__bottom-num">1</div>
+                        <div class="whywe__bottom-num">2</div>
+                        <div class="whywe__bottom-num">3</div>
+                        <div>
+                            <div class="whywe__bottom-txt">Заявка</div>
+                            <div class="whywe__bottom-txt">Обучение</div>
+                            <div class="whywe__bottom-txt">Трудоустройство</div>
+                        </div>
+                        
+                        <svg width="818" height="401" viewBox="0 0 818 401" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.1" d="M1 399L305.5 300L392 335.5L612 249L687.5 278.5L816 1" stroke="#1D56EB" stroke-width="4"/>
+                        </svg>
+                        <div class="progress-circular progress-circular--1">
+                            
+                        </div>
+                        <div class="progress-circular progress-circular--2">
+                            
+                        </div>
+                        <div class="progress-circular progress-circular--3">
+                            
+                        </div>
+                       
+                    </div>
+                    <div class="whywe__svg2">
+                        <svg id="svg2" width="818" height="401" viewBox="0 0 818 401" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 399C119.915 360.338 305.5 300 305.5 300L392 335.5L612 249L687.5 278.5L816 1" stroke="#1D56EB" stroke-width="4"/>
+                            </svg>
+                            
+                    </div>
+             
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="section winwin">
+        <div class="container">
+            <div class="title winwin-title" data-aos="fade-right" data-aos-delay="0"
+            data-aos-duration="500">
+                Оплата после трудоустройства или  <div class="title-bluebox">win-win</div> модель
+            </div>
+            <div class="winwin__inner">
+                <div class="winwin__item" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="500">
+                    <div class="winwin__item-block">
+                        <div class="winwin__item-block-text">
+                            Оплата за обучение только <span>после трудоустройства.</span>после трудоустройства. Не нужно платить если не найдешь работу.
+                        </div>
+                    </div>
+                    <div class="winwin__item-text">
+                        Оплата после трудоустройства
+                    </div>
+                    <img src="assets/images/job-search.png" alt="" class="winwin__item-img">
+                </div>
+                <div class="winwin__item" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="500">
+                    <div class="winwin__item-block">
+                        <div class="winwin__item-block-text">
+                            Трудоустройство в Москве и Санкт-Петербурге. <span>ЗП в 5 раз выше</span> чем в регионах.
+                        </div>
+                    </div>
+                    <div class="winwin__item-text">
+                        Высокая, гарантированная ЗП
+                    </div>
+                    <img src="assets/images/salary.png" alt="" class="winwin__item-img">
+                </div>
+                <div class="winwin__item" data-aos="fade-up" data-aos-delay="300"
+                data-aos-duration="500">
+                    <div class="winwin__item-block">
+                        <div class="winwin__item-block-text">
+                           <span>Оплата 14%</span> от фактического дохода (после вычетов НДФЛ) в течение 18 месяцев.
+                        </div>
+                    </div>
+                    <div class="winwin__item-text">
+                        Оплата 14% по факту трудоустройства
+                    </div>
+                    <img src="assets/images/percentage.png" alt="" class="winwin__item-img">
+                </div>
+            </div>
+            <div class="winwin__gallery">
+               
+      <div class="swiper gallery">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="vacancy-box">
+                <img src="assets/images/vacancy1.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="vacancy-box">
+                <img src="assets/images/vacancy1.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="vacancy-box">
+                <img src="assets/images/vacancy1.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="vacancy-box">
+                <img src="assets/images/vacancy1.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="vacancy-box">
+                <img src="assets/images/vacancy1.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="vacancy-box">
+                <img src="assets/images/vacancy1.jpg" alt="">
+            </div>
+          </div>
+         
+        </div>
+        <div class="arrow__sw arrow__sw--left" id="sw1left">
+            <img src="assets/images/next.png" alt="">
+        </div>
+        <div class="arrow__sw arrow__sw--right" id="sw1right">
+            <img src="assets/images/prev.png" alt="">
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+            </div>
+        </div>
+    </section>
+    <section class="section garanty">
+        <div class="container">
+            <div class="title garanty-title" data-aos="fade-right" data-aos-delay="0"
+            data-aos-duration="500">
+                Гарантия трудоустройства и профессиональной поддержки в <span>Москве или Петербурге</span> 
+            </div>
+            <div class="descr" data-aos="fade-right" data-aos-delay="100"
+            data-aos-duration="500">
+                А так же консультация от наших кураторов по вопросам переезда
+            </div>
+            <div class="garanty__inner">
+                <div class="garanty__lines">
+                    <img src="assets/images/Vector6.svg" alt="vector">
+                </div>
+                <div class="garanty__item">
+                    <div class="garanty__item-block"  data-aos="fade-right" data-aos-delay="200"
+                    data-aos-duration="500">
+                        <div class="garanty__item-block-icon">
+                            <img src="assets/images/gar_icons/gar1.svg" alt="">
+                        </div>
+                        <div class="garanty__item-block-content">
+                            <h4>В Москве или Петербурге </h4>
+                            <p>
+                                мы можем гарантировать начальную зарплату от 150 000 ₽ (зафиксировано в договоре)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="garanty__item-block"  data-aos="fade-right" data-aos-delay="300"
+                    data-aos-duration="500">
+                        <div class="garanty__item-block-icon">
+                            <img src="assets/images/gar_icons/gar2.svg" alt="">
+                        </div>
+                        <div class="garanty__item-block-content">
+                            <h4>Сможешь сразу попасть </h4>
+                            <p>
+                                на перспективные и интересные проекты в столице
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="garanty__item">
+                    <div class="garanty__item-block2"  data-aos="fade-right" data-aos-delay="400"
+                    data-aos-duration="500">
+                        <div class="garanty__item-block-icon">
+                            <img src="assets/images/gar_icons/gar3.svg" alt="">
+                        </div>
+                        <div class="garanty__item-block-content">
+                            <h4>Быстрое развитие</h4>
+                            <p>
+                                благодаря общению с опытным наставником и куратором
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section formsection">
+        <div class="container">
+        <div class="formsection__inner">
+            <div class="img-bg">
+                <img src="assets/images/Group.png" alt="">
+            </div>
+            <div class="formsection__item"  data-aos="fade-right" data-aos-delay="0"
+            data-aos-duration="500">               
+            
+                <form action="/" method="POST" class="form1">
+                    <div class="form__group" >
+                        <input class="input-name" type="text" placeholder="Ваше Имя">
+                    </div>     
+                    <div class="form__group">
+                        <input class="input-flag" type="text">
+                        <input class="input-phone tel"   type="tel" placeholder="Ваш Телефон"
+                        onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" 
+                        />
+                    </div>  
+                    <div class="form__group">
+                        <input class="input-mail email1" type="email" placeholder="Ваш Email">
+                    </div>  
+                    <div class="form__group">
+                 <textarea class="textarea"
+                  name="question" placeholder="Текст сообщения"></textarea>
+                    </div>   
+                    <div class="form-btn ">
+                        <button class="btn-form" type="submit">Оставить заявку</button>
+                    </div>      
+                </form>
+              
+            </div>
+            <div class="formsection__item"  data-aos="fade-left" data-aos-delay="100"
+            data-aos-duration="500">
+           
+                <h4 class="title">
+                    <span>Не планируешь</span> переезд в Москву или Петербург? 
+                </h4>
+                <p class="descr">
+                    Заполни форму и мы обсудим с тобой варианты взаимодействия индивидуально
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="section conditions">
+        <div class="container">
+            <div class="conditions__inner">
+                <div class="conditions__item">
+                    <img src="assets/images/mentoring.png" alt="conditions-bg">
+                    <h3 class="title conditions-title" data-aos="fade-right" data-aos-delay="0"
+                    data-aos-duration="500">
+                        <span>2 месяца </span>- и ты product owner
+                    </h3>
+                    <h4 class="conditions-littletitle"  data-aos="fade-right" data-aos-delay="100"
+                    data-aos-duration="500">
+                        Регулярное <span>взаимодействие </span>студента с ментором
+                    </h4>
+                    <div class="conditions-text"  data-aos="fade-right" data-aos-delay="100"
+                    data-aos-duration="500">
+                        Ты изучаешь полный курс на нашей платформе.
+    При возникновении вопросов пишешь их в наш закртый телеграм канал. Наставник дополнительно организовывает регулярные звонки с тобой и помогает со сложными задачами.
+                    </div>
+                </div>
+                <div class="conditions__item" data-aos="fade-left" data-aos-delay="100"
+                data-aos-duration="500">
+                    <img src="assets/images/contract.png" alt="conditions-bg">
+                   
+                    <h4 class="conditions-littletitle" data-aos="fade-left" data-aos-delay="200"
+                    data-aos-duration="500">
+                        <span>Подготовка</span> к собеседованию и трудоустройству
+                    </h4>
+                    <div class="conditions-text" data-aos="fade-left" data-aos-delay="200"
+                    data-aos-duration="500">
+                        Наши наставники помогут составить конкретное резюме и подготовят к ответам на самые сложные и каверзные вопросы, которые могут встретиться тебе на собеседованиях.
+                    </div>
+                    <div class="btn-form btn-center" data-aos="fade-up" data-aos-delay="300"
+                    data-aos-duration="500" data-modal="#becomeClientModal">
+                        Оставить заявку
+                    </div>
+                </div>
+                <div class="conditions__work" >
+                    <h3 class="title conditions-title" data-aos="fade-right" data-aos-delay="0"
+                    data-aos-duration="500">
+                        <span>Условия</span> работы с нами
+                    </h3>
+                    <div class="conditions__work-content" data-aos="fade-up" data-aos-delay="100"
+                    data-aos-duration="500">
+                        <div class="conditions__work-item">
+                            <span class="back">0</span>
+                            <span class="front">рублей</span>
+                        </div>
+                        <div class="conditions__work-item">
+                            <span class="back">14%</span>
+                            <span class="front">от ЗП</span>
+                        </div>
+                    </div>
+                    <div class="conditions__btn">
+                        <div class="border-btn">
+                            По факту трудоустройства
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+     <section class="section-banner" style="background-image: url('assets/images/community.jpg');">
+        <div class="container">
+    
+        </div>
+    </section>
+    <section class="section moduls">
+        <div class="container">
+            <h2 class="title moduls-title" data-aos="fade-right" data-aos-delay="0"
+            data-aos-duration="500">
+                <span>Модули,</span> которые ты пройдёшь в ходе обучения
+            </h2>
+            <div class="moduls__inner">
+                <div class="moduls__item" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="500" style="background-image: url('assets/images/ic0/ic01.png');">
+                    Введение в продуктовый менеджмент
+                </div>
+                <div class="moduls__item" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="500" style="background-image: url('assets/images/ic0/ic02.png');">
+                    Продуктовый менеджмент в отраслевых нишах
+                </div>
+                <div class="moduls__item" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="500" style="background-image: url('assets/images/ic0/ic03.png');">
+                    Планирование и позиционирование продукта
+                </div>
+                <div class="moduls__item" data-aos="fade-up" data-aos-delay="300"
+                data-aos-duration="500" style="background-image: url('assets/images/ic0/ic04.png');">
+                    Управление продуктовыми экосистемами и платформами
+                </div>
+                <div class="moduls__item" data-aos="fade-up" data-aos-delay="400"
+                data-aos-duration="500" style="background-image: url('assets/images/ic0/ic05.png');">
+                    Velocity и Capacity в продуктовом менеджменте
+                </div>
+                <div class="moduls__item" data-aos="fade-up" data-aos-delay="500"
+                data-aos-duration="500" style="background-image: url('assets/images/ic0/ic06.png');">
+                    Риск — менеджмент и принятие решений в условиях неопределенности
+                </div>
+                <div class="moduls__item" data-aos="fade-up" data-aos-delay="500"
+                data-aos-duration="500" style="background-image: url('assets/images/ic0/ic07.png');">
+                    Оптимизация процесса разработки с использованием прототипов и MVP
+                </div>
+            </div>
+            <div class="conditions__work">
+                <h3 class="title conditions-title" data-aos="fade-right" data-aos-delay="0"
+                data-aos-duration="500">
+                    <span>Условия</span> работы с нами
+                </h3>
+                <div class="conditions__work-content" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="500">
+                    <div class="conditions__work-item">
+                        <span class="back counter" data-target="50">0</span>
+                        <span class="front">часов</span>
+                    </div>
+                    <div class="conditions__work-item">
+                        <span class="back counter" data-target="500">0</span>
+                        <span class="front">заданий</span>
+                    </div>
+                </div>
+                <div class="conditions__btn" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="500">
+                    <div class="descr">
+                        Вы не только освоите новые <span>навыки</span>, но и примените их на <span>практике</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section author">
+        <div class="container">
+            <div class="author__inner">
+                <div class="author__item" >
+                    <h2 class="title title-author" data-aos="fade-right" data-aos-delay="0"
+                    data-aos-duration="500">
+                        <span>Автор</span> и ведущий проекта
+                     </h2>
+                     <div class="descr" data-aos="fade-right" data-aos-delay="100"
+                     data-aos-duration="500">
+                         <p>
+                             Продукты в <span>Сбер, ГосУслуги, ВТБ, ВК, ICBC, Visa, МинНауки</span> и др.
+                         </p>
+                         <p>
+                             Обладатель <span>MBA, патентов,</span> десятков научных публикаций и работ
+                         </p>
+             
+                    </div>
+                </div>
+                <div class="author__item" >
+                    <div class="author__descr">
+                        <h2 class="author__name" data-aos="fade-left" data-aos-delay="200"
+                        data-aos-duration="500">
+                            Антон Баланов
+                        </h2>
+                        <p class="author__prof" data-aos="fade-left" data-aos-delay="300"
+                        data-aos-duration="500">
+                            Советник по экономике и социологии в РАЕН
+                        </p>
+                    </div>
+                    <div class="author__img" data-aos="fade-left" data-aos-delay="100"
+                    data-aos-duration="500">
+                        <img src="assets/images/Group232.png" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="section experience">
+        <div class="container">
+            <div class="experience-head">
+                    <span class="back" data-aos="fade-right" data-aos-delay="0"
+                    data-aos-duration="500">13 лет</span>
+                    <span class="front" data-aos="fade-left" data-aos-delay="100"
+                    data-aos-duration="500">опыта</span>
+            </div>
+            <div class="experience__container" data-aos="fade-up" data-aos-delay="200"
+            data-aos-duration="500">
+            <div class="experience__inner" id="exp1">
+                
+                <div class="experience__item ">
+                    <div>
+                        Создание и продажа стартапа для <span>ICBC</span>
+                    </div>
+                   
+                </div>
+                <div class="experience__item">
+                    <div>
+                        Руководитель IT-продуктов в <span>Сбер</span>
+                    </div>
+                   
+                </div> 
+            </div>
+            <div class="experience__inner" id="exp2">
+                
+                <div class="experience__item">
+                    <div>
+                        <small>2010</small>
+                        Первый крупный проект <span>3D MIRA</span>
+                    </div>
+                </div>
+                <div class="experience__item">
+                    <div>
+                        Руководитель IT-продуктов в <span>ВТБ</span> и <span>VK</span>
+                    </div>
+                </div> 
+                <div class="experience__item">
+                    <div>
+                        <small>2023</small>
+                        Российская Академия Естественных Наук и проекты с <span>Яндекс</span>, <span>Visa</span>, <span>МинЦифра</span>, <span>Крок</span> и др.
+                    </div>
+                </div> 
+            </div>
+            </div>
+           
+        </div>
+    </section>
+    <section class="section portfolio">
+        <div class="portfolio__title">
+            Портфолио
+        </div>
+        <span class="port-line"></span>
+        <div class="container">
+            
+            <div class="portfolio__header swiper" id="cat-filter">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide portfolio__header-item active" data-target="all">
+                      Все
+                    </div>
+                    <div class="swiper-slide   portfolio__header-item" data-target="commerce">
+                      Коммерческие работы
+                    </div>
+                    <div class="swiper-slide  portfolio__header-item" data-target="culture">
+                        Культура и отдых
+                    </div>
+                    <div class="swiper-slide  portfolio__header-item" data-target="awards">
+                       Награды и упоминания в сми
+                    </div>
+                    <div class="swiper-slide  portfolio__header-item" data-target="education">
+                        Образование
+                    </div>
+                    <div class="swiper-slide  portfolio__header-item" data-target="commerce">
+                        Коммерческие работы
+                    </div>
+                    <div class="swiper-slide  portfolio__header-item" data-target="public">
+                        Публикации и научные работы
+                    </div>
+                    <div class="swiper-slide  portfolio__header-item" data-target="awards">
+                        Награды и упоминания в сми
+                    </div>
+                    <div class="swiper-slide  portfolio__header-item" data-target="education">
+                       Образование
+                    </div>
+                </div>
+                
+                <div class="arrow__portfolio" id="sw2right">
+                    <img src="assets/images/arr_portfolio.svg" alt="">
+                </div>
+               
+            </div>
+            <div class="portfolio__swiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide portfolio__item" data-category="public commerce" data-tag="yandex vk">
+                        <a href="assets/images/rec1.jpg" class="portfolio__photo link">
+                            <img src="assets/images/rec1.jpg" alt="">
+                        </a>
+                        <div class="portfolio__text">
+                            Реновация образовательной платформы
+                        </div>
+                    </div>
+                    <div class="swiper-slide portfolio__item" data-category="culture public commerce" data-tag="sber vk">
+                        <a href="assets/images/rec2.jpg" class="portfolio__photo link">
+                            <img src="assets/images/rec2.jpg" alt="">
+                        </a>
+                        <div class="portfolio__text">
+                            Трансформация органов контроля
+                        </div>
+                    </div>
+                    <div class="swiper-slide portfolio__item" data-category="public education culture" data-tag="yandex vk grada nauka">
+                        <a href="assets/images/rec3.jpg" class="portfolio__photo link">
+                            <img src="assets/images/rec3.jpg" alt="">
+                        </a>
+                        <div class="portfolio__text">
+                            Цифровизация массовых услуг
+                        </div>
+                    </div>
+                    <div class="swiper-slide portfolio__item" data-category="public" data-tag="grada vk nauka dhl">
+                        <a href="assets/images/rec4.jpg" class="portfolio__photo link">
+                            <img src="assets/images/rec4.jpg" alt="">
+                        </a>
+                        <div class="portfolio__text">
+                            Стандарты разработки
+                        </div>
+                    </div>
+                    <div class="swiper-slide portfolio__item" data-category="public" data-tag="kruk vk medelement noomera">
+                        <a href="assets/images/rec1.jpg" class="portfolio__photo link">
+                            <img src="assets/images/rec1.jpg" alt="">
+                        </a>
+                        <div class="portfolio__text">
+                            Реновация образовательной платформы
+                        </div>
+                    </div>
+                    <div class="swiper-slide portfolio__item" data-category=" public awards" data-tag="vtb vk medelement">
+                        <a href="assets/images/rec2.jpg" class="portfolio__photo link">
+                            <img src="assets/images/rec2.jpg" alt="">
+                        </a>
+                        <div class="portfolio__text">
+                            Трансформация органов контроля
+                        </div>
+                    </div>
+                    <div class="swiper-slide portfolio__item" data-category="education" data-tag="visa dhl">
+                        <a href="assets/images/rec3.jpg" class="portfolio__photo link">
+                            <img src="assets/images/rec3.jpg" alt="">
+                        </a>
+                        <div class="portfolio__text">
+                            Цифровизация массовых услуг
+                        </div>
+                    </div>
+                    <div class="swiper-slide portfolio__item" data-category="commerce" data-tag="visa dhl nauka noomera">
+                        <a href="assets/images/rec4.jpg" class="portfolio__photo link">
+                            <img src="assets/images/rec4.jpg" alt="">
+                        </a>
+                        <div class="portfolio__text">
+                            Стандарты разработки
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow__sw arrow__sw--left" id="sw7left">
+                    <img src="assets/images/next.png" alt="">
+                </div>
+                <div class="arrow__sw arrow__sw--right" id="sw7right">
+                    <img src="assets/images/prev.png" alt="">
+                </div>
+               
+            </div>
+          
+            <div class="portfolio__tags" id="tag-filter">
+                <span class="portfolio__tag" data-target="nauka">МинНауки</span>
+                <span class="portfolio__tag" data-target="visa">Visa</span>
+                <span class="portfolio__tag" data-target="vtb">ВТБ «ПАО»</span>
+                <span class="portfolio__tag" data-target="kruk">KPOK</span>
+                <span class="portfolio__tag" data-target="grada">Града Предприятие</span>
+                <span class="portfolio__tag" data-target="yandex">Яндекс</span>
+                <span class="portfolio__tag" data-target="sber">Сбербанк «ПАО»</span>
+                <span class="portfolio__tag" data-target="vk">VK</span>
+                <span class="portfolio__tag" data-target="noomera">Noomera</span>
+                <span class="portfolio__tag" data-target="dhl">DHL</span>
+                <span class="portfolio__tag" data-target="medelement">МедЭлемент</span>
+            </div>
+        </div>
+    </section>
+    <section class="section reviews">
+        <div class="container">
+            <h3 class="title center" data-aos="fade-up" data-aos-delay="0"
+            data-aos-duration="500">
+                <span>Отзывы</span> учеников
+            </h3>
+            <div class="swiper myReviews">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide review__item">
+                    <div class="review__item-inner">
+                        
+                        <div class="review__item-content">
+                            <h4 class="review__item-name">
+                                Олег
+                            </h4>
+                            <p>
+                                Хотел бы поделиться своим восторгом от работы с Антоном Балановым. Он - истинный профессионал и эксперт в области цифровизации. Весь процесс сотрудничества с ним был безупречным. 
+                            </p>
+                            <a href="#!" class="review__item-readmore">
+                                Читать всё »
+                            </a>
+                        </div>
+                        <div class="review__item-right">
+                            <div class="review__bg-photo" style="background-image: url('assets/images/avatars/av1.jpg');">
+                                    
+                            </div>
+                            <div class="review__blue-bg">
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                   
+                  </div>
+                  <div class="swiper-slide review__item">
+                    <div class="review__item-inner">
+                        
+                        <div class="review__item-content">
+                            <h4 class="review__item-name">
+                                Владимир
+                            </h4>
+                            <p>
+                                Хотел бы поделиться своим восторгом от работы с Антоном Балановым. Он - истинный профессионал и эксперт в области цифровизации. Весь процесс сотрудничества с ним был безупречным. 
+                            </p>
+                            <a href="#!" class="review__item-readmore">
+                                Читать всё »
+                            </a>
+                        </div>
+                        <div class="review__item-right">
+                            <div class="review__bg-photo" style="background-image: url('assets/images/avatars/av2.jpg');">
+                                    
+                            </div>
+                            <div class="review__blue-bg">
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                  </div>
+                  <div class="swiper-slide review__item">
+                    <div class="review__item-inner">
+                        
+                        <div class="review__item-content">
+                            <h4 class="review__item-name">
+                                Александра
+                            </h4>
+                            <p>
+                                Хотел бы поделиться своим восторгом от работы с Антоном Балановым. Он - истинный профессионал и эксперт в области цифровизации. Весь процесс сотрудничества с ним был безупречным. 
+                            </p>
+                            <a href="#!" class="review__item-readmore">
+                                Читать всё »
+                            </a>
+                        </div>
+                        <div class="review__item-right">
+                            <div class="review__bg-photo" style="background-image: url('assets/images/avatars/av3.jpg');">
+                                    
+                            </div>
+                            <div class="review__blue-bg">
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                  </div>
+                  <div class="swiper-slide review__item">
+                    <div class="review__item-inner">
+                        
+                        <div class="review__item-content">
+                            <h4 class="review__item-name">
+                                Роман
+                            </h4>
+                            <p>
+                                Хотел бы поделиться своим восторгом от работы с Антоном Балановым. Он - истинный профессионал и эксперт в области цифровизации. Весь процесс сотрудничества с ним был безупречным. 
+                            </p>
+                            <a href="#!" class="review__item-readmore">
+                                Читать всё »
+                            </a>
+                        </div>
+                        <div class="review__item-right">
+                            <div class="review__bg-photo" style="background-image: url('assets/images/avatars/av1.jpg');">
+                                    
+                            </div>
+                            <div class="review__blue-bg">
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                  </div>
+                  <div class="swiper-slide review__item">
+                    <div class="review__item-inner">
+                        
+                        <div class="review__item-content">
+                            <h4 class="review__item-name">
+                                Федор
+                            </h4>
+                            <p>
+                                Хотел бы поделиться своим восторгом от работы с Антоном Балановым. Он - истинный профессионал и эксперт в области цифровизации. Весь процесс сотрудничества с ним был безупречным. 
+                            </p>
+                            <a href="#!" class="review__item-readmore">
+                                Читать всё »
+                            </a>
+                        </div>
+                        <div class="review__item-right">
+                            <div class="review__bg-photo" style="background-image: url('assets/images/avatars/av2.jpg');">
+                                    
+                            </div>
+                            <div class="review__blue-bg">
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                  </div>
+                  <div class="swiper-slide review__item">
+                    <div class="review__item-inner">
+                        
+                        <div class="review__item-content">
+                            <h4 class="review__item-name">
+                                Павел
+                            </h4>
+                            <p>
+                                Хотел бы поделиться своим восторгом от работы с Антоном Балановым. Он - истинный профессионал и эксперт в области цифровизации. Весь процесс сотрудничества с ним был безупречным. 
+                            </p>
+                            <a href="#!" class="review__item-readmore">
+                                Читать всё »
+                            </a>
+                        </div>
+                        <div class="review__item-right">
+                            <div class="review__bg-photo" style="background-image: url('assets/images/avatars/av4.jpg');">
+                                    
+                            </div>
+                            <div class="review__blue-bg">
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </div>
+    </section>
+    <section class="section rules">
+        <div class="container">
+            <h2 class="title center" data-aos="fade-up" data-aos-delay="0"
+            data-aos-duration="500">
+                <span>Условия</span> участия в програме
+            </h2>
+            <div class="rules__inner">
+                <div class="rules__item" data-aos="fade-up" data-aos-delay="100"
+                data-aos-duration="500">
+                    <div class="rules__item-top">
+                        Тебе от <span>24 до 45</span> лет
+                    </div>
+                    <div class="rules__item-bottom">
+                        01
+                    </div>
+                </div>
+                <div class="rules__item" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="500">
+                    <div class="rules__item-top">
+                        Ты можешь выделять на обучение минимум <span>6 часов</span> в неделю
+                    </div>
+                    <div class="rules__item-bottom">
+                        02
+                    </div>
+                </div>
+                <div class="rules__item" data-aos="fade-up" data-aos-delay="200"
+                data-aos-duration="500">
+                    <div class="rules__item-top">
+                        Проживаешь в <span>Москве</span> или <span>Санкт-Петербурге</span> или готов переехать в эти города для трудоустройства
+                    </div>
+                    <div class="rules__item-bottom">
+                        03
+                    </div>
+                </div>
+                <div class="rules__item" data-aos="fade-up" data-aos-delay="300"
+                data-aos-duration="500">
+                    <div class="rules__item-top">
+                        <span>Гражданство, ПМЖ</span> или <span>ВНЖ </span>(со сроком действия более 2х лет) РФ или Гражданство Беларуси
+                    </div>
+                    <div class="rules__item-bottom">
+                        04
+                    </div>
+                </div>
+                <div class="rules__item" data-aos="fade-up" data-aos-delay="400"
+                data-aos-duration="500">
+                    <div class="rules__item-top">
+                        Успешно проходишь <span>тестовое задание</span> и онлайн-собеседование
+                    </div>
+                    <div class="rules__item-bottom">
+                        05
+                    </div>
+                </div>
+                <div class="rules__item" data-aos="fade-up" data-aos-delay="500"
+                data-aos-duration="500">
+                    <div class="rules__item-top">
+                        Подписываешь <span>договор </span>- в нём зафиксированы все гарантии и условия. 
+                    </div>
+                    <div class="rules__item-bottom">
+                        06
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="section testform">
+        <div class="container">
+            <h2 class="title center" data-aos="fade-up" data-aos-delay="0"
+            data-aos-duration="500" >
+                Для участия необходимо пройти<br>
+                <span>входное тестирование</span>
+            </h2>
+            <div class="testform__inner" data-aos="fade-up" data-aos-delay="100"
+            data-aos-duration="500">               
+            
+                <form action="/" method="POST" class="form1">
+                    <div class="form__group" >
+                        <input class="input-name" type="text" placeholder="Ваше Имя">
+                    </div>     
+                    <div class="form__group">
+                        <input class="input-flag" type="text">
+                        <input class="input-phone tel"   type="tel" placeholder="Ваш Телефон"
+                        onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" 
+                        />
+                    </div>  
+                    <div class="form__group">
+                        <input class="input-mail email1" type="email" placeholder="Ваш Email">
+                    </div>  
+                    <div class="form__group">
+                       
+                        <label class=""> 
+                            <input type="checkbox" checked="checked"/>
+                            Есть начальные знания по управлению IT-продуктами
+                          </label>
+                       
+                    </div>  
+            
+                    <div class="form-btn btn-center">
+                        <button class="btn-form " type="submit">Оставить заявку</button>
+                    </div>      
+                </form>
+              
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__left">
+                Остались вопросы? Можешь задать их нам
+                <span class="nowrap">в мессенджерах!</span>
+            </div>
+            <div class="footer__right">
+                <a href="#!">
+                    <img src="assets/images/social/whatsapp.png" alt="whatsapp">
+                </a>
+                <a href="#!">
+                    <img src="assets/images/social/vk.png" alt="vk">
+                </a>
+                <a href="#!">
+                    <img src="assets/images/social/telegram2.png" alt="telegram">
+                </a>
+            </div>
+        </div>
+    </footer>
+   
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/dist/countUp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
